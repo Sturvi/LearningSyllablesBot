@@ -1,0 +1,66 @@
+Input: 1
+Output: Успешно добавлено 1
+Output: 526369804
+Input: 2
+Output: Успешно добавлено 1
+Output: 526369804
+Input: 3
+Output: Успешно добавлено 1
+Output: 526369804
+Input: 10
+Output: Успешно добавлено 1
+Output: 526369804
+Input: 8
+Output: Успешно добавлено 1
+Output: 5572592522
+Input: 7
+Output: Успешно добавлено 1
+Output: 5572592522
+Input: /add в
+Input: Успешно добавлено 1
+Input: 526369804
+Input: Буква успешка добавлена
+Input: Буква успешка добавлена
+Input: Буква успешка добавлена
+Input: Буква успешка добавлена
+Input: Буква успешка добавлена
+Input: Буква успешка добавлена
+Input: Буква успешка добавлена
+Input: Буква успешка добавлена
+Input: Буква успешка добавлена
+Input: Буква успешка добавлена
+Input: Буква успешка добавлена
+Input: Буква успешка добавлена
+Input: Согласные: Н, Д, И
+ Гласные: И, А
+Input: Буква успешка добавлена
+Input: Буква успешка добавлена
+Input: Буква успешка добавлена
+Input: Буква успешка добавлена
+Input: Согласные: Н, Д
+ Гласные: И, А
+Input: ДИ
+Input: АН
+Input: ИД
+Input: ИД
+Input: АД
+Input: НА
+Input: АН
+Input: ИД
+Input: НИ
+Input: НИ
+Input: ДА
+Input: ДА
+Input: ИД
+Input: НИ
+Input: ДА
+Input: ИН
+Input: ДИ
+Input: НИ
+Input: ИН
+Input: ИН
+Input: НИ
+Input: АД
+Input: ИН
+Input: АН
+Input: АД

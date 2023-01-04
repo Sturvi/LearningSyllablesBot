@@ -47,13 +47,40 @@ public class User {
     public String getSyllable() {
         int consonant = (int) (Math.random() * consonantLetters.size());
         int vowel = (int) (Math.random() * vowelLetters.size());
-        int order = (int) (Math.random() * 2);
 
-        if (order == 0) {
-            return "" + consonantLetters.get(consonant) + vowelLetters.get(vowel);
+        int length = (int) (Math.random() * 2) + 2;
+
+        if (length == 2 || (vowelLetters.size() == 1 && consonantLetters.size() == 1)) {
+            int order = (int) (Math.random() * 2);
+            if (order == 0) {
+                return "" + consonantLetters.get(consonant) + vowelLetters.get(vowel);
+            } else {
+                return "" + vowelLetters.get(vowel) + consonantLetters.get(consonant);
+            }
         } else {
-            return "" + vowelLetters.get(vowel) + consonantLetters.get(consonant);
+            int consonantQuantity = (int) (Math.random() * 2) + 1;
+            if (consonantQuantity == 1 || (consonantLetters.size() == 1 && vowelLetters.size() != 1)) {
+                int secondVowel = (int) (Math.random() * vowelLetters.size());
+                while (secondVowel == vowel) {
+                    secondVowel = (int) (Math.random() * vowelLetters.size());
+                }
+                return "" + vowelLetters.get(vowel) + consonantLetters.get(consonant) + vowelLetters.get(secondVowel);
+            } else {
+                int secondConsonant = (int) (Math.random() * consonantLetters.size());
+                while (secondConsonant == consonant) {
+                    secondConsonant = (int) (Math.random() * vowelLetters.size());
+                }
+                int vowelIndex = (int) (Math.random() * 3) + 1;
+                if (vowelIndex == 1) {
+                    return "" + vowelLetters.get(vowel) + consonantLetters.get(consonant) + consonantLetters.get(secondConsonant);
+                } else if (vowelIndex == 2) {
+                    return "" + consonantLetters.get(consonant) + vowelLetters.get(vowel) + consonantLetters.get(secondConsonant);
+                } else {
+                    return "" + consonantLetters.get(consonant) + consonantLetters.get(secondConsonant) + vowelLetters.get(vowel);
+                }
+            }
         }
+
     }
 
 

@@ -20,21 +20,27 @@ public class UserList {
             String[] messageText = tempMessage.replaceAll(" {2,}", " ").split(" ");
             char latter;
             if (messageText[0].equals("/add")) {
-                if (messageText[1].length() != 1) {
-                    learningSyllablesBot.sendMsg(message, "Введены неправильные данные");
-                    return;
+
+                for (int i = 1; i < messageText.length; i++) {
+                    if (messageText[i].length() == 1) {
+                        latter = messageText[i].toUpperCase().charAt(0);
+                        userMap.get(message.getChatId().toString()).add(message, latter);
+                    } else {
+                        for (int j = 0; j < messageText[i].length(); j++) {
+                            latter = messageText[i].toUpperCase().charAt(j);
+                            userMap.get(message.getChatId().toString()).add(message, latter);
+                        }
+                    }
                 }
 
-                latter = messageText[1].toUpperCase().charAt(0);
-                userMap.get(message.getChatId().toString()).add(message, latter);
             } else if (messageText[0].equals("/get")) {
                 String printText = userMap.get(message.getChatId().toString()).getAllLetters();
                 learningSyllablesBot.sendMsg(message, printText);
-            } else if (messageText[0].equals("/getSyllable")) {
+            } else if (messageText[0].equals("Получить")) {
                 String printText = userMap.get(message.getChatId().toString()).getSyllable();
                 learningSyllablesBot.sendMsg(message, printText);
             } else {
-                learningSyllablesBot.sendMsg(message, "Введены неправильные данные");
+                help(message);
             }
 
             //backupMap();
@@ -54,13 +60,18 @@ public class UserList {
                 messageText[1] = messageText[1].toUpperCase();
                 latter = messageText[1].charAt(0);
                 userMap.get(message.getChatId().toString()).add(message, latter);
-            } else {
-                learningSyllablesBot.sendMsg(message, "Введены неправильные данные");
             }
             //backupMap();
         }
     }
 
+    private static void help(Message message){
+        LearningSyllablesBot learningSyllablesBot = new LearningSyllablesBot();
+        learningSyllablesBot.sendMsg(message, "Что бы добавить новые буквы, наберите \\add и букву которую хотите добавить. Например:" +
+                "\n \\add а" +
+                "\n Доступны только буквы русского языка." +
+                "\n наберите \\get если хотите увидеть все ранее добавленные буквы.");
+    }
     private static void loadMapFromBackUp() {
 
         try (Scanner scanner =new Scanner(new FileInputStream("src/main/resources/backup/keys.txt"));){

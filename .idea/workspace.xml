@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31234a89-cb24-4b28-ae31-2b342d010e99" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/UserMap.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/backup/keys.txt" afterDir="false" />
+    <list default="true" id="31234a89-cb24-4b28-ae31-2b342d010e99" name="Changes" comment="+++">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LearningSyllablesBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LearningSyllablesBot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/UserList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Logs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Logs.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,8 +81,16 @@
       <option name="presentableId" value="Default" />
       <updated>1672812544423</updated>
       <workItem from="1672812546165" duration="20662000" />
-      <workItem from="1672842100515" duration="8607000" />
+      <workItem from="1672842100515" duration="10473000" />
     </task>
+    <task id="LOCAL-00001" summary="+++">
+      <created>1672850855641</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1672850855641</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,18 +107,22 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="+++" />
+    <option name="LAST_COMMIT_MESSAGE" value="+++" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/UserList.java</url>
-          <line>77</line>
+          <line>88</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
-      <inline-watch fileUrl="file://$PROJECT_DIR$/src/main/java/UserList.java" line="71">
+      <inline-watch fileUrl="file://$PROJECT_DIR$/src/main/java/UserList.java" line="82">
         <watch expression="file" language="JAVA" />
       </inline-watch>
     </watches-manager>

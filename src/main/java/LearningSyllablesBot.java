@@ -60,9 +60,8 @@ public class LearningSyllablesBot extends TelegramLongPollingBot {
         KeyboardRow keyboardFirstRow = new KeyboardRow();
         KeyboardRow keyboardSecondRow = new KeyboardRow();
 
-        keyboardFirstRow.add(new KeyboardButton("/add"));
-        keyboardFirstRow.add(new KeyboardButton("/get"));
-        keyboardSecondRow.add(new KeyboardButton("/getSyllable"));
+        keyboardFirstRow.add(new KeyboardButton("Помощь"));
+        keyboardSecondRow.add(new KeyboardButton("Получить слог"));
 
         keyboardRowList.add(keyboardFirstRow);
         keyboardRowList.add(keyboardSecondRow);

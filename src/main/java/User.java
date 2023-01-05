@@ -1,9 +1,10 @@
 import org.telegram.telegrambots.meta.api.objects.Message;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class User {
+public class User implements Serializable {
     List<Character> consonantLetters = new ArrayList<>();
     List<Character> vowelLetters = new ArrayList<>();
 
@@ -83,5 +84,8 @@ public class User {
 
     }
 
-
+    public void clean() {
+        vowelLetters.clear();
+        consonantLetters.clear();
+    }
 }

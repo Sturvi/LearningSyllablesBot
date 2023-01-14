@@ -82,7 +82,7 @@ public class UserList {
 
     private static void loadMapFromBackUp() {
 
-        File backupFolder = new File("src/main/resources/backup");
+        File backupFolder = new File("/Bot/backup");
         File[] allFiles = backupFolder.listFiles();
 
         for (File file : allFiles
@@ -102,7 +102,7 @@ public class UserList {
     }
 
     private static void backupUser(Message message) {
-        File file = new File("src/main/resources/backup/" + message.getChatId().toString() + ".txt");
+        File file = new File("/Bot/backup/" + message.getChatId().toString() + ".txt");
 
         if (!file.exists()) {
             try {

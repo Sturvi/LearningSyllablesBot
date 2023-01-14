@@ -2,7 +2,7 @@ import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Message;
-import org.telegram.telegrambots.meta.api.objects.Update;
+import org.telegram.telegrambots.meta.api.objects.Update;w
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardMarkup;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardButton;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardRow;
@@ -78,13 +78,5 @@ public class LearningSyllablesBot extends TelegramLongPollingBot {
     @Override
     public String getBotToken() {
         return "5826035760:AAFhIn5zFe_NVcQD5Vk1VmUWU0ERdT5JaeI";
-    }
-
-    private void logData (String message){
-        try (FileWriter fileWriter = new FileWriter("src/main/resources/Logs.txt", true)){
-            fileWriter.write("Input: " + message + "\n");
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
     }
 }
